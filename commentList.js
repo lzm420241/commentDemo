@@ -1,3 +1,5 @@
+import { Comment } from './comment'
+
 class CommentBox extends React.Component {
 
 	_getComments() {
@@ -5,9 +7,9 @@ class CommentBox extends React.Component {
 			{id: 1, author: 'Morgan McCircuit', body: 'Great picture'},
 			{id: 2, author: 'Bending Bender', body: 'Excellent stuff'}
 		];
-		return commentList.map(() => {
+		return commentList.map((comment) => {
 			return ( <Comment 
-				author={comment.author} body={comment.body}
+				author={comment.author} body={comment.body} key={comment.id}
 				/> );
 		});
 	}
@@ -27,7 +29,7 @@ class CommentBox extends React.Component {
 		return (
 			<div className="comment-box">
 				<h3>Comments</h3>
-				<h4 className="comment-count">{ this._getCommentsTitle(Comments.length) }</h4>
+				<h4 className="comment-count">{ this._getCommentsTitle(comments.length) }</h4>
 				<div className="comment-list">
 					{comments}
 				</div>
