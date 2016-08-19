@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "using react to build a commet demo! #next step ##build backend api using nodejs",
+  "main": "commentList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "latest",
+    "express-generator": "latest",
+    "mongodb": "^2.2.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzm420241/commentDemo.git"
+  },
+  "keywords": [
+    "nodejs",
+    "reactjs"
+  ],
+  "author": "lzm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lzm420241/commentDemo/issues"
+  },
+  "homepage": "https://github.com/lzm420241/commentDemo#readme"
+}
